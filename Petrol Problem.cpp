@@ -53,8 +53,23 @@ public:
         
     }
 };
-
-
+// To solve leetcode
+ int canCompleteCircuit2(vector<int>& petrol, vector<int>& dist) {
+       
+  int total = 0;
+    int sum   = 0;
+    int j     =-1;
+    for(int i = 0; i < petrol.size(); ++i) {
+        total += petrol[i] - dist[i];
+        sum   += petrol[i] - dist[i];
+        if(sum < 0) {
+            sum = 0;
+            j   = i;
+        }
+    }
+return (total >= 0) ? j + 1 : -1;
+        
+    }
 
 void printArray(vector<int> arr) 
 { 
