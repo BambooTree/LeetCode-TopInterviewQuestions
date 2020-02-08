@@ -1,3 +1,6 @@
+
+// Please refer to https://codingrecipies.blogspot.com/search/label/Stacks%20%26%20Queues
+
 #include <iostream> 
 #include <vector> 
 #include <algorithm> 
